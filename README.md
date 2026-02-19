@@ -36,3 +36,25 @@ Temel model eğitiminin ötesine geçerek; sağlam bir veri ön işleme boru hat
 ├── requirements.txt       # Proje bağımlılıkları
 └── templates/
     └── index.html         # API için önyüz (frontend) arayüzü
+```
+
+## 💻 Kurulum ve Kullanım
+
+1.  Depoyu klonlayın:
+    ```bash
+    git clone https://github.com/AdnanSag/ml-deployment-fastapi-diamond.git
+    ```
+2.  Bağımlılıkları yükleyin:
+    ```bash
+    pip install -r requirements.txt
+    ```
+---
+
+## 📬 İletişim
+
+Projelerim hakkında konuşmak veya işbirliği yapmak isterseniz bana ulaşabilirsiniz:
+* **LinkedIn:** https://www.linkedin.com/in/adnan-sag/ 
+* **E-posta:** adnansag91@gmail.com
+
+*Created by Adnan Sag*
+
