@@ -1,34 +1,38 @@
-# 💎 Diamond Price Prediction: End-to-End ML Pipeline & API
+<div align="right">
+  <a href="README.md">🇹🇷 Türkçe</a> | <a href="README_EN.md">🇬🇧 English</a>
+</div>
+
+# 💎 <img src="https://flagcdn.com/w40/tr.png" width="32" alt="TR" style="vertical-align: middle;"> Elmas Fiyat Tahmini: Uçtan Uca ML Boru Hattı ve API
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat&logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?style=flat&logo=fastapi)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.3.0-F7931E?style=flat&logo=scikit-learn)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-150458?style=flat&logo=pandas)
 
-## 📌 Project Overview
-This project is a complete, end-to-end machine learning solution designed to predict the price of diamonds based on their physical attributes (carat, cut, color, clarity, depth, table, and dimensions). 
+## 📌 Proje Özeti
+Bu proje, elmasların fiyatını fiziksel özelliklerine (karat, kesim, renk, berraklık, derinlik, tabla ve boyutlar) dayanarak tahmin etmek için tasarlanmış uçtan uca eksiksiz bir makine öğrenmesi çözümüdür. 
 
-It goes beyond basic model training by implementing a robust data preprocessing pipeline, an optimized **Support Vector Regression (SVR)** model, and deploying the model as a real-time RESTful web service using **FastAPI**.
+Temel model eğitiminin ötesine geçerek; sağlam bir veri ön işleme boru hattı (pipeline) kurar, optimize edilmiş bir **Destek Vektör Regresyonu (SVR)** modeli uygular ve bu modeli **FastAPI** kullanarak gerçek zamanlı bir RESTful web servisi olarak dışa sunar (deploy).
 
-## ✨ Key Features
-* **🧹 Robust Data Preprocessing:** Automated handling of impossible physical dimensions (zero values) and EDA-driven outlier removal.
-* **⚙️ Feature Engineering:** Integration of `LabelEncoder` for categorical variables and `StandardScaler` for numerical scaling.
-* **🧠 Machine Learning:** Utilizes a highly tuned SVR (Support Vector Regression) with an RBF kernel for accurate price estimation.
-* **🚀 Real-Time API:** A fully functional web interface and REST API built with FastAPI to serve predictions instantly.
-* **📦 Model Serialization:** End-to-end pipeline (Model + Scaler + Encoders) saved securely via `pickle` for seamless deployment.
+## ✨ Temel Özellikler
+* **🧹 Sağlam Veri Ön İşleme:** İmkansız fiziksel boyutların (sıfır değerleri) otomatik yönetimi ve Keşifçi Veri Analizi (EDA) odaklı aykırı değer (outlier) temizliği.
+* **⚙️ Özellik Mühendisliği:** Kategorik değişkenler için `LabelEncoder` ve sayısal ölçeklendirme için `StandardScaler` entegrasyonu.
+* **🧠 Makine Öğrenmesi:** Doğru fiyat tahmini için RBF çekirdekli (kernel), yüksek oranda ince ayar yapılmış bir SVR (Destek Vektör Regresyonu) kullanımı.
+* **🚀 Gerçek Zamanlı API:** Tahminleri anında sunmak için FastAPI ile oluşturulmuş tam işlevli bir web arayüzü ve REST API.
+* **📦 Model Serileştirme:** Sorunsuz dağıtım için `pickle` aracılığıyla güvenli bir şekilde kaydedilen uçtan uca boru hattı (Model + Ölçeklendirici + Kodlayıcılar).
 
-## 🛠️ Tech Stack
-* **Data Science:** `pandas`, `numpy`, `matplotlib`, `seaborn`
-* **Machine Learning:** `scikit-learn` (SVR, Preprocessing, Metrics)
-* **Web Deployment:** `FastAPI`, `Uvicorn`, `Jinja2`
+## 🛠️ Teknoloji Yığını
+* **Veri Bilimi:** `pandas`, `numpy`, `matplotlib`, `seaborn`
+* **Makine Öğrenmesi:** `scikit-learn` (SVR, Ön İşleme, Metrikler)
+* **Web & API:** `FastAPI`, `Uvicorn`, `Jinja2`
 
-## 📂 Project Structure
+## 📂 Proje Yapısı
 ```text
-├── train_model.py         # Data loading, cleaning, and model training script
-├── main.py                # FastAPI web server and prediction endpoint
-├── 10-diamonds.csv        # Raw dataset
-├── diamond_model_complete.pkl # Serialized model and preprocessors (Generated)
-├── testdata.csv           # Test dataset for evaluation (Generated)
-├── requirements.txt       # Project dependencies
+├── train_model.py         # Veri yükleme, temizleme ve model eğitim betiği
+├── main.py                # FastAPI web sunucusu ve tahmin uç noktası (endpoint)
+├── 10-diamonds.csv        # Ham veri seti
+├── diamond_model_complete.pkl # Serileştirilmiş model ve ön işlemciler (Üretilen)
+├── testdata.csv           # Değerlendirme için test veri seti (Üretilen)
+├── requirements.txt       # Proje bağımlılıkları
 └── templates/
-    └── index.html         # Frontend interface for the API
+    └── index.html         # API için önyüz (frontend) arayüzü
