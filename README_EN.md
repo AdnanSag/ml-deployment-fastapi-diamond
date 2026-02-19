@@ -36,3 +36,41 @@ It goes beyond basic model training by implementing a robust data preprocessing 
 ├── requirements.txt       # Project dependencies
 └── templates/
     └── index.html         # Frontend interface for the API
+```
+## 💻 Installation & Usage
+
+
+
+1.  Clone the repository:
+
+    ```bash
+
+    git clone https://github.com/AdnanSag/ml-deployment-fastapi-diamond.git
+
+    ```
+
+2.  Install dependencies:
+
+    ```bash
+
+    pip install -r requirements.txt
+
+    ```
+
+---
+
+
+
+## 📬 Contact
+
+
+
+If you'd like to talk about my projects or collaborate, feel free to reach out:
+
+* **LinkedIn:** https://www.linkedin.com/in/adnan-sag/ 
+
+* **Email:** adnansag91@gmail.com
+
+
+
+*Created by Adnan Sag* 
